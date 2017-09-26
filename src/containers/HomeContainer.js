@@ -1,30 +1,19 @@
 import React, { Component } from 'react';
 import { ProfileCard } from '../components/ProfileCard';
 import { RobotList } from '../components/RobotList';
+import { getUsers } from '../api/users';
 
 export class HomeContainer extends Component {
-  constructor(props) {
-    super(props);
+  state = {
+    users: [],
+  };
 
-    this.state = {
-      users: [{ uid: 123213, name: 'Alice X', email: 'alice@test.com' }],
-      count: 0,
-    };
-
-    setTimeout(() => {
-      this.setState(state => {
-        return {
-          users: [
-            ...state.users,
-            {
-              uid: 138349,
-              name: 'Bob X',
-              email: 'bob@test.com',
-            },
-          ],
-        };
-      });
-    }, 5000);
+  componentDidMount() {
+    getUsers().then(users => {
+      this.setState(() => ({
+        users,
+      }));
+    });
   }
 
   render() {
