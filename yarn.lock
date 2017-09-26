@@ -3194,6 +3194,10 @@ interpret@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.4.tgz#820cdd588b868ffb191a809506d6c9c8f212b1b0"
 
+intl-tel-input@^12.1.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-12.1.0.tgz#d514b6630e7869a94ea13307ab8e7b0bdb51a3e3"
+
 invariant@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
