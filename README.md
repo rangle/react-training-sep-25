@@ -12,6 +12,64 @@
 
 ---
 
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import { createStore } from 'redux';
+import { Provider, connect } from 'react-redux';
+
+// Action Types
+const INCREMENT = 'INCREMENT';
+const DECREMENT = 'DECREMENT';
+
+// Reducer
+const initialState = 0;
+
+function reducer(state = initialState, action) {
+  switch (action.type) {
+    case INCREMENT:
+      return state + 1;
+    case DECREMENT:
+      return state - 1;
+    default:
+      return state;
+  }
+}
+
+const store = createStore(reducer);
+
+const App = ({ count, increase, decrease }) => (
+  <div>
+    <pre>State = {count}</pre>
+    <button onClick={increase}>increase</button>
+    <button onClick={decrease}>decrease</button>
+  </div>
+);
+
+// Action Creators
+const increase = () => ({ type: INCREMENT });
+const decrease = () => ({ type: DECREMENT });
+
+const mapStateToProps = state => ({ count: state });
+const mapDispatchToActions = {
+  increase: increase,
+  decrease: decrease,
+};
+
+const ConnectedApp = connect(mapStateToProps, mapDispatchToActions)(App);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <ConnectedApp />
+  </Provider>,
+  document.getElementById('root'),
+);
+```
+
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
