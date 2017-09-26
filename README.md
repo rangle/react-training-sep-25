@@ -1,3 +1,16 @@
+### Resources
+
++ [rangle.github.io/react-training](http://rangle.github.io/react-training)
++ [reactpatterns.com](http://reactpatterns.com)
++ [vasanthk.gitbooks.io/react-bits](https://vasanthk.gitbooks.io/react-bits)
++ [reactcheatsheet.com](https://reactcheatsheet.com)
++ ES6
+  + [rangle-react-training/es6_constructs](https://rangle-io.gitbooks.io/react-training/content/book/es6_constructs/)
+  + [ngcourse/es6](https://angular-2-training-book.rangle.io/handout/features/es6.html)
+  + [es6-equivalents-in-es5](https://github.com/addyosmani/es6-equivalents-in-es5)
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -283,7 +296,7 @@ In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and s
 
 Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
 
-The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
+The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine.
 
 ## Formatting Code Automatically
 
@@ -1769,7 +1782,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
