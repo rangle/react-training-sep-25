@@ -20,6 +20,31 @@
 ![](react-redux-world.png)
 console)
 
+
+#### Focus
+
+```js
+class Form extends Component {
+
+  els = [];
+
+  componentDidUpdate() {
+    this.els[this.els.length - 1].focus()
+  }
+
+  render() {
+    <form>
+      {fields.map(field => (
+        <div>
+          <label />
+          <input ref={el => this.els.push(el)} />
+        </div>
+      ))}
+    </form>
+  }
+}
+```
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
