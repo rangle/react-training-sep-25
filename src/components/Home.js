@@ -5,10 +5,8 @@ import { RobotList } from './RobotList';
 import { Heading } from './Heading';
 import { Header } from './Header';
 import { SearchBar } from './SearchBar';
-import { getFilteredUsers } from '../api/users';
 
 export const Home = ({ query, users, onQueryChange }) => {
-  const filteredUsers = getFilteredUsers(query, users);
   return (
     <div>
       <Header>
@@ -21,7 +19,7 @@ export const Home = ({ query, users, onQueryChange }) => {
         />
       </Header>
       <RobotList>
-        {filteredUsers.map(user => (
+        {users.map(user => (
           <Link key={user.uid} to={`/details/${user.uid}`} className="link">
             <ProfileCard {...user} className="w5 ma3" />
           </Link>
