@@ -5,4 +5,6 @@ const mapStateToProps = state => ({
   users: state.users,
 });
 
-export const DetailsContainer = connect(mapStateToProps, null)(Details);
+const DetailsContainer = connect(mapStateToProps, null)(Details);
+
+export default DetailsContainer;

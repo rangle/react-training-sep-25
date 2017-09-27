@@ -10,6 +10,6 @@ const mapDispatchToActions = {
   onQueryChange: updateQuery,
 };
 
-export const HomeContainer = connect(mapStateToProps, mapDispatchToActions)(
-  Home,
-);
+const HomeContainer = connect(mapStateToProps, mapDispatchToActions)(Home);
+
+export default HomeContainer;

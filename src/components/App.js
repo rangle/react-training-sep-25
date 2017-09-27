@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { HomeContainer } from '../containers/HomeContainer';
-import { DetailsContainer } from '../containers/DetailsContainer';
+import { asyncComponent } from '../asyncComponent';
+
+const AsyncHomeContainer = asyncComponent(() =>
+  import(/* webpackChunkName: "home" */ '../containers/HomeContainer'),
+);
+const AsyncDetailsContainer = asyncComponent(() =>
+  import(/* webpackChunkName: "details" */ '../containers/DetailsContainer'),
+);
 
 export class App extends Component {
   componentDidMount() {
@@ -21,8 +27,8 @@ export class App extends Component {
             </Link>
           </nav>
 
-          <Route exact path="/" component={HomeContainer} />
-          <Route path="/details/:uid" component={DetailsContainer} />
+          <Route exact path="/" component={AsyncHomeContainer} />
+          <Route path="/details/:uid" component={AsyncDetailsContainer} />
         </div>
       </Router>
     );
