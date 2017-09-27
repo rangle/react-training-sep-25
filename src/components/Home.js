@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ProfileCard } from './ProfileCard';
 import { RobotList } from './RobotList';
 import { Heading } from './Heading';
@@ -21,7 +22,9 @@ export const Home = ({ query, users, onQueryChange }) => {
       </Header>
       <RobotList>
         {filteredUsers.map(user => (
-          <ProfileCard key={user.uid} {...user} className="w5 ma3" />
+          <Link key={user.uid} to={`/details/${user.uid}`} className="link">
+            <ProfileCard {...user} className="w5 ma3" />
+          </Link>
         ))}
       </RobotList>
     </div>
