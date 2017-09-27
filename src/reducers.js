@@ -2,9 +2,9 @@ import { combineReducers } from 'redux';
 import { getUsers } from './api/users';
 
 // Action Types
-const UPDATE_USERS = 'robodex/UPDATE_USERS';
-const UPDATE_QUERY = 'robodex/UPDATE_QUERY';
-const UPDATE_ERROR = 'robodex/UPDATE_ERROR';
+export const UPDATE_USERS = 'robodex/UPDATE_USERS';
+export const UPDATE_QUERY = 'robodex/UPDATE_QUERY';
+export const UPDATE_ERROR = 'robodex/UPDATE_ERROR';
 
 // Users Reducer
 const userInitialState = [];
@@ -24,7 +24,7 @@ const uiInitialState = {
   error: null,
 };
 
-function uiReducer(state = uiInitialState, action) {
+export function uiReducer(state = uiInitialState, action) {
   switch (action.type) {
     case UPDATE_QUERY:
       return { ...state, query: action.payload };

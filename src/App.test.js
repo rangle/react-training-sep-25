@@ -1,8 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+function circleArea(r) {
+  if (typeof r === 'number') {
+    return Math.PI * r * r;
+  }
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  return 0;
+}
+
+// describing what we are testing
+//
+// what should it do
+//
+// assert if it was successfull
+describe('circleArea', () => {
+  it('should calculate the area of a circle', () => {
+    const result = circleArea(2);
+    expect(result).toBe(12.566370614359172);
+  });
+
+  it('should only work for numbers', () => {
+    const result = circleArea('2');
+    expect(result).toBe(0);
+  });
 });

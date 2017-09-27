@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileCard 1`] = `
+<article
+  className="pa3 br2 tc bg-near-white grow pointer "
+>
+  <img
+    className="w4 h4 br-100"
+    src="https://robohash.org/1"
+  />
+  <h2
+    className="sans-serif dark-gray f4"
+  >
+    Alice X
+  </h2>
+  <p
+    className="sans-serif dark-gray"
+  >
+    alice@test.com
+  </p>
+</article>
+`;

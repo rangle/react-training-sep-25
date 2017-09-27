@@ -4,7 +4,7 @@ import { Heading } from './Heading';
 import { Text } from './Text';
 import { Avatar } from './Avatar';
 
-export const ProfileCard = ({ uid, name, email, className, ...props }) => (
+export const ProfileCard = ({ uid, name, email, className = '', ...props }) => (
   <article
     className={`pa3 br2 tc bg-near-white grow pointer ${className}`}
     {...props}
