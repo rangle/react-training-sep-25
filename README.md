@@ -4,11 +4,20 @@
 + [reactpatterns.com](http://reactpatterns.com)
 + [vasanthk.gitbooks.io/react-bits](https://vasanthk.gitbooks.io/react-bits)
 + [reactcheatsheet.com](https://reactcheatsheet.com)
-+ ES6
+
+#### ES6
   + [rangle-react-training/es6_constructs](https://rangle-io.gitbooks.io/react-training/content/book/es6_constructs/)
   + [ngcourse/es6](https://angular-2-training-book.rangle.io/handout/features/es6.html)
   + [es6-equivalents-in-es5](https://github.com/addyosmani/es6-equivalents-in-es5)
 + [timed out request example](http://jsbin.com/kovakej/15/edit?js,console)
+
+
+#### Redux
+
++ [redux-tutorial](https://github.com/happypoulp/redux-tutorial)
++ [getting-started-with-redux](https://egghead.io/courses/getting-started-with-redux)
+
+![](react-redux-world.png)
 
 ---
 
