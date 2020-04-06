@@ -5,8 +5,8 @@
   "dependencies": {
     "intl-tel-input": "^12.1.0",
     "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
     "react-scripts": "1.0.13",
     "tachyons": "^4.8.1"
   },
